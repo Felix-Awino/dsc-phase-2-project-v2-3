@@ -56,28 +56,40 @@ We obtained the dataset for our analysis from the CSV file “kc_house_data.csv�
 
 ●	sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors
 
-##Method
+Method
 
 We prepared our data for analysis by first importing the dataset and the libraries to facilitate analysis, then examining the contents of the dataset and cleaning the data to eliminate any missing values. The analysis deployed in this project uses multiple and  simple linear regression methods to develop a model of house price using a subset of predictor variables. 
 We first developed a baseline model using a simple linear regression method, with price as our independent variable and sqft_living as our feature variable. Subsequent iterations of the model built on this baseline model until our final model which utilized multiple linear regression models, with the log-transformed price “price_log” as the 
 dependent variable and  xxxx as feature variables. 
 
-##Results
+Results
+
 We compared the R-squared score at each model iteration and witnessed an improvement in our R-squared from approximately 48% in our initial model to 65% in our final model.
 
-##Conclusions
+Conclusions
+
 The model provided insights into the various features that affect the price of a house in King's County. Notably, waterfront, grade, and view had the highest impact on the price of houses as houses with waterfronts attracted a price increase of 31.51%,
 
 The following features will improve the pricing of the houses:
+
 ●	A unit increase in square foot living will increase the price of a house by 0.02%
+
 ●	A unit increase in the number of bathrooms will increase the price of a house by 7.91%
+
 ●	A unit increase in the number of floors will increase the price of a house by 7.74%
+
 ●	The higher the grading of a house, the higher it's price. For instance, a house graded as excellent will attract a price increase of 11.94%, while a house graded as luxury will attract a price increase of 21.27%, and mansion a price increase of 22.91%
+
 ●	The better the condition of a house, the higher it's price. A house in "good" condition will attract a price increase of 1.9% while a house in "very good" condition will attract a price increase of 8.63%
+
 ●	Houses without views attract lower prices compared to houses with views. The model demonstrates that a house with a good view attracts a price increase of 3.52%, fair view 8.33%, and excellent view 16.55% increase in price
+
 ●	Houses with a waterfront attract a price increase of 31.51%
+
 Recommendations
+
 G-One Limited therefore has the following recommendations for the family to guide their choice of a house in the King's County neighborhood:
+
 They should consider the number of bathrooms
 They should consider the number of floors
 They should focus on houses graded as excellent, luxury, or mansion
