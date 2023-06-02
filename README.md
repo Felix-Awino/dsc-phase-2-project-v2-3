@@ -1,7 +1,7 @@
 King’s County Home Sales dataset analysis
 
 
-image.png
+
 
 Project Overview
 This project aims to analyze the housing sales data and provide information on various factors that influence housing prices. The project uses linear regression to infer what factors influence housing prices and by how much.
@@ -13,6 +13,7 @@ G-One Limited will analyze the King's County home sales dataset to identify key 
 Data understanding
 
 We obtained the dataset for our analysis from the CSV file “kc_house_data.csv” containing data on over 21,000 housing units including: 
+
 ●	id - Unique identifier for a house
 ●	date - Date house was sold
 ●	price - Sale price (prediction target)
