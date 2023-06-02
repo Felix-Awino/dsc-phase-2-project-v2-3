@@ -15,36 +15,57 @@ Data understanding
 We obtained the dataset for our analysis from the CSV file “kc_house_data.csv” containing data on over 21,000 housing units including: 
 
 ●	id - Unique identifier for a house
+
 ●	date - Date house was sold
+
 ●	price - Sale price (prediction target)
+
 ●	bedrooms - Number of bedrooms
+
 ●	bathrooms - Number of bathrooms
+
 ●	sqft_living - Square footage of living space in the home
+
 ●	sqft_lot - Square footage of the lot
+
 ●	floors - Number of floors (levels) in house
+
 ●	waterfront - Whether the house is on a waterfront Includes Duwamish, Elliott Bay, Puget Sound, Lake Union, Ship Canal, Lake Washington, Lake Sammamish, other lake, and river/slough waterfronts
+
 ●	view - Quality of view from house Includes views of Mt. Rainier, Olympics, Cascades, Territorial, Seattle Skyline, Puget Sound, Lake Washington, Lake Sammamish, small lake / river / creek, and other
+
 ●	condition - How good the overall condition of the house is. Related to maintenance of house. See the King County Assessor Website for further explanation of each condition code
+
 ●	grade - Overall grade of the house. Related to the construction and design of the house. See the King County Assessor Website for further explanation of each building grade code
+
 ●	sqft_above - Square footage of house apart from basement
+
 ●	sqft_basement - Square footage of the basement
+
 ●	yr_built - Year when house was built
+
 ●	yr_renovated - Year when house was renovated
+
 ●	zipcode - ZIP Code used by the United States Postal Service
+
 ●	lat - Latitude coordinate
+
 ●	long - Longitude coordinate
+
 ●	sqft_living15 - The square footage of interior housing living space for the nearest 15 neighbors
+
 ●	sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors
-Method
+
+##Method
 
 We prepared our data for analysis by first importing the dataset and the libraries to facilitate analysis, then examining the contents of the dataset and cleaning the data to eliminate any missing values. The analysis deployed in this project uses multiple and  simple linear regression methods to develop a model of house price using a subset of predictor variables. 
 We first developed a baseline model using a simple linear regression method, with price as our independent variable and sqft_living as our feature variable. Subsequent iterations of the model built on this baseline model until our final model which utilized multiple linear regression models, with the log-transformed price “price_log” as the 
 dependent variable and  xxxx as feature variables. 
 
-Results
+##Results
 We compared the R-squared score at each model iteration and witnessed an improvement in our R-squared from approximately 48% in our initial model to 65% in our final model.
 
-Conclusions
+##Conclusions
 The model provided insights into the various features that affect the price of a house in King's County. Notably, waterfront, grade, and view had the highest impact on the price of houses as houses with waterfronts attracted a price increase of 31.51%,
 
 The following features will improve the pricing of the houses:
